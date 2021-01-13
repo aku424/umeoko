@@ -1,0 +1,284 @@
+body{
+    list-style: none;
+    font-weight: Verdana Geneva Tahoma;
+    line-height: 1.5;
+    font-family: serif;
+    color: #700A03;
+    background:#FEF0CD ;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: #700A03;
+
+}
+a:hover{
+    text-decoration: none;
+    color: #700A03;
+    opacity: 0.7;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+.section-title{
+   
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align:center;
+    font-weight: bold;
+}
+.section-title-border{
+    border-bottom:3px solid #D2972D ;
+}
+/* -=============================================-
+scrollanime
+================================================= */
+/*1.フェードインアニメーションの指定*/
+.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+ 
+/*2.上下の動きを指定*/
+.updown {transform: translateY(-100px);}
+.downup {transform: translateY(100px);}
+ 
+/*3.左右の動きを指定*/
+.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
+.slide-right {transform: translateX(200px);}
+.slide-left {transform: translateX(-200px);}
+/* -=============================================-
+header
+================================================= */
+ header{
+    z-index: 4;
+    width: 100%;
+    background:#FEF0CD ;
+    position: fixed;
+    border-bottom:1px solid #700A03;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #700A03;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+    
+}
+.header-icon{
+    height: 70px;
+    width: 70px;
+} 
+.header-title{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+
+/* -=============================================-
+intro
+================================================= */
+.intro-title{
+    font-size: 60px;
+    font-weight: bold;
+}
+.intro-text{
+    font-size: 30px;
+}
+
+
+/* -=============================================-
+top
+================================================= */
+.top{
+    padding-top: 100px;
+}
+
+.top-image{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+/* -=============================================-
+concept
+================================================= */
+.concept-left-title{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0;
+}
+.concept-left-text{
+    line-height: 180%;
+    text-align: justify;
+}
+
+/* -=============================================-
+service
+================================================= */
+.menu-item-border{
+    border-bottom:5px dotted  #C4A16C;
+    font-weight:bold;
+}
+.sign{
+    margin-right: 5px;
+}
+.menu-title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+.menu-title:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.serviceMenus{
+    margin: 30px 0;
+    display: none;
+    height: 100%;
+}
+.serviceMenus.open{
+    display: block;
+}
+.text-small{
+    font-size: 14px;
+    line-height: 200%;
+}
+.list-item{
+    line-height: 200%;
+    font-size: 20px;
+}
+.serviceLists{
+   text-align: center;
+    margin: 0 auto;
+    
+}
+/* --- menu--- */
+
+
+/* -=============================================-
+access
+================================================= */
+.google-map{
+    width: 100%;
+    height: 500px;
+}
+.access-title{
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.access-text{
+    font-size: 20px;
+    line-height: 150%;
+}
+.access-border{
+    border-bottom: 1px solid #700A03;
+}
+.access-right-content{
+    margin-bottom: 20px;
+}
+/* -=============================================-
+contact
+================================================= */
+.label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.prof-form{
+    width: 100%;
+}
+.form{
+    margin-bottom: 10px;
+}
+.contact-form{
+    width: 100%;
+    height: 200px;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.alert-message{
+    margin-bottom: 10px;
+}
+.btn{
+    color: #700A03;
+    padding: 10px 80px;
+}
+/* -=============================================-
+footer
+================================================= */
+footer{
+    background-color:#700A03;
+    color: #FEF0CD ;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    font-size: 14px;
+}
+/* -=============================================-
+responsive
+================================================= */
+@media (max-width: 768px){
+    .intro-title{
+        font-size: 36px;
+    }
+    .intro-text{
+        font-size: 18px;
+    }
+    .list-item-price-head{
+
+        display: block;
+    }
+    .text-small{
+        font-size: 12px;
+    }
+    .other{
+        font-size: 16px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+/* -=============================================-
+responsive 375
+================================================= */
+@media (max-width: 375px){
+    .list-item{
+        font-size: 18px;
+    }
+    .other{
+        font-size: 14px;
+    }
+}
